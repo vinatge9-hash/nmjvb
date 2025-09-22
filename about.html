@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<title>Niyantri Care - About</title>
+<meta name='description' content='Learn about Niyantri Care, our mission, and our approach to playful, trustworthy dog care.'>
+<script src='https://cdn.tailwindcss.com'></script>
+</head>
+<body class='opacity-0 transition-opacity duration-700'>
+<header class='bg-white/90 fixed w-full z-50'>
+<nav class='max-w-6xl mx-auto px-4 py-4 flex items-center justify-between'>
+<a href='index.html' class='text-2xl font-bold text-pink-600'>Niyantri Care</a>
+<button id='mobile-menu-button' aria-label='Open menu' class='md:hidden p-2 rounded-full bg-pink-500 text-white transition-all duration-300'>
+<span class='block w-5 h-0.5 bg-white mb-1'></span>
+<span class='block w-5 h-0.5 bg-white'></span>
+</button>
+<div id='mobile-menu' class='hidden md:flex gap-6 items-center'>
+<a href='index.html' class='text-gray-800 hover:text-pink-600 transition-all duration-300'>Home</a>
+<a href='about.html' class='text-gray-800 hover:text-pink-600 transition-all duration-300'>About</a>
+<a href='services.html' class='text-gray-800 hover:text-pink-600 transition-all duration-300'>Services</a>
+<a href='contact.html' class='text-gray-800 hover:text-pink-600 transition-all duration-300'>Contact Us</a>
+</div>
+</nav>
+</header>
+<main>
+<section class='min-h-screen flex items-center justify-center' id='about'>
+<div class='max-w-4xl text-center p-6'>
+<h1 class='text-3xl font-bold mb-4'>Our Story</h1>
+<p class='text-gray-700'>Niyantri Care started with a simple idea: dogs deserve care that feels like visiting a friend's home. We blend play, safety, and practical dog-wellbeing advice for busy owners in Hyderabad.</p>
+<div class='mt-6 flex justify-center'>
+<img src='https://images.pexels.com/photos/5255554/pexels-photo-5255554.jpeg?auto=compress&cs=tinysrgb&h=650&w=940' alt='Dog and owner in a park' class='w-72 h-48 object-cover rounded-lg'>
+</div>
+</div>
+</section>
+<section class='py-12 bg-gray-100'>
+<div class='max-w-6xl mx-auto px-6'>
+<h2 class='text-2xl font-semibold mb-4'>Our Approach</h2>
+<p class='text-gray-700'>Safety first. Fun and companionship second. Flexible options from daily walks to overnight care, all tailored to your dog's needs with a friendly, homey touch.</p>
+</div>
+</section>
+</main>
+<footer class='bg-gray-900 text-gray-100 mt-12'>
+<div class='max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-8'>
+<div>
+<h3 class='text-xl font-semibold mb-2'>Niyantri Care</h3>
+<p class='text-sm'>Playful, trustworthy dog care that feels like a friend.</p>
+</div>
+<div>
+<h4 class='text-lg font-semibold mb-2'>Quick Links</h4>
+<ul class='space-y-2'>
+<li><a href='index.html' class='text-gray-300 hover:text-white transition-all duration-300'>Home</a></li>
+<li><a href='services.html' class='text-gray-300 hover:text-white transition-all duration-300'>Services</a></li>
+<li><a href='contact.html' class='text-gray-300 hover:text-white transition-all duration-300'>Contact Us</a></li>
+</ul>
+</div>
+<div>
+<h4 class='text-lg font-semibold mb-2'>Visit</h4>
+<p class='text-sm'>Hyderabad, Telangana, India</p>
+</div>
+</div>
+<hr class='border-gray-700'>
+<p class='text-center py-4'>&copy; 2025 Niyantri Care. All rights reserved.</p>
+</footer>
+<script>
+const btn=document.getElementById('mobile-menu-button');
+const menu=document.getElementById('mobile-menu');
+if(btn){btn.addEventListener('click', ()=>{menu.classList.toggle('hidden');});}
+document.addEventListener('DOMContentLoaded', ()=>{document.body.classList.remove('opacity-0'); document.body.classList.add('opacity-100');});
+</script>
+</body>
+</html>
